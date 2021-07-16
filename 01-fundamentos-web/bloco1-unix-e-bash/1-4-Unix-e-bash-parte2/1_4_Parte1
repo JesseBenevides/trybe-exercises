@@ -1,0 +1,106 @@
+#------------------ Parte 1 -------------------------------
+
+#1
+cd /Documentos/Trybe/BLOCO1/unix_tests
+
+#2
+cat > skills2.txt
+    Internet
+    Unix 
+    Bash
+
+#3
+cat >> skills2.txt
+    JavaScript
+    CSS
+    HTML
+    React
+    Node
+
+#4
+wc -l skills2.txt
+
+#5
+head -n 3 skills2.txt | sort > top_skills.txt 
+
+#6
+cat > phrases2.txt
+    Olá, meu nome é Jessé
+    Sou aluno da Trybe
+    Sou Desenvolvedor web
+
+#7
+grep -i br  phrases2.txt | wc -l
+
+#8
+grep -i -v br  phrases2.txt | wc -l
+
+#9
+    #1
+        cat >> phrases2.txt
+            Brazil
+            EUA
+    #2
+        echo 'Brazil' phrases2.txt
+        echo 'EUA' phrases2.txt
+
+#10
+cat phrases2.txt countries.txt > bunch_of_things
+
+#11
+sort -o bunch_of_things.txt bunch_of_things.txt
+
+#------------------ Parte 2 -------------------------------
+
+#3
+    #1
+        chmod u=rw,g=rw,o=rw bunch_of_things.txt
+    #2
+        chmod 666 bunch_of_things.txt
+
+#4
+    chmod u-w,g-w,o-w
+
+#5
+    chmod 644 bunch_of_things.txt
+
+#------------------ Parte 3 -------------------------------
+
+#1
+    ps 
+
+#2
+    sleep 30 &
+
+#3
+    ps
+    kill 9390
+
+#4
+    sleep 30
+    ^z
+    bg
+
+#5
+    sleep 300 &
+
+#6
+    sleep 200
+    ^z
+    sleep 100
+    ^z
+
+#7
+    jobs
+    fg %1
+    ^z
+
+#8
+    bg %3
+
+#9
+    kill %1
+    kill %2
+    kill %3
+
+#------------------ Parte 4 - BONUS ---------------------------
