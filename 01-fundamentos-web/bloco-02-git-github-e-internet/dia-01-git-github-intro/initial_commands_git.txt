@@ -1,7 +1,17 @@
-git init - 
-git status
-git add
-git commit
-git branch
-git checkout
-git merge
+git init - inicia o vercionamento no diretorio atual
+git status = verifica o estado adual do projeto
+
+git remote add origin urlDoRepositorio = conecta o repositorio local com o online
+git remote -v = verifica o status da conexão com o repositorio online
+
+git branch = lista todas as branchs
+git branch nomeBranch = criar branch
+git checkout nomeDaBranch = muda a branch citada
+git checkout -b nomeDaBranch = cria a branch e muda para ela
+git add = coloca as alterações no stage(pronta para o commit)
+git commit = salva as alterações no git
+git merge nomeDaBranch = faz um merge das alterações da branch citata com a branch atual
+git branch -d nomeDaBranch = apaga a branch citada
+
+git pull = sicronozia o repositório local em relação ao online
+git push origin master = envia as alterações do repositório local para o repositorio online
