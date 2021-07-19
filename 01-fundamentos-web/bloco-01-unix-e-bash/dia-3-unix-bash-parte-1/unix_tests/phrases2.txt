@@ -1,0 +1,6 @@
+Ola, tudo bem?
+Meu nome é Jesse
+Sou aluno da Trybe
+Sou desenvolvedor full stack
+Brazil
+EUA

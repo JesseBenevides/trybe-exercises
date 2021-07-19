@@ -1,0 +1,9 @@
+Blue
+Yellow
+Gray
+Black
+White
+Brown
+Banana
+Orange
+Lemon
