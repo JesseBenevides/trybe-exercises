@@ -1,6 +1,7 @@
 - Unix
 - Bash
 - Git
-HTML
-CSS
-Jest
+- HTML
+- CSS
+- Jest
+- JavaScript
