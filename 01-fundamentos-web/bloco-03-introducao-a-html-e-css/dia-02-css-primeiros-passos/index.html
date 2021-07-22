@@ -9,16 +9,40 @@
       h1 {
         font-size: 65px;
         color: orange;
+        font-family: sans-serif;
+        text-align: center;
       }
 
+      /* Paragraph Styles */
+      p {
+        font-weight: 600;
+        font-size: 3em;
+        text-decoration: underline;
+      }
       /* UL Styles */
       ul {
         background-color: gainsboro;
+        line-height: 30px;
+        font-style: italic;
       }
 
+      body {
+        font-size: 16px;
+      }
       /* Class favorite-color Styles */
       .favorite-color {
         background-color: gray;
+      }
+
+      /* List Itens Color Styles */
+      #li-yellow {
+        color: yellow;
+      }
+      #li-red {
+        color: red;
+      }
+      #li-brown {
+        color: brown;
       }
     </style>
   </head>
@@ -31,9 +55,9 @@
     <!-- Favorite Color Section -->
     <p class="favorite-color">Qual é a sua cor favorita?</p>
     <ul class="favorite-color">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="li-yellow">Amarelo</li>
+      <li id="li-red">Vermelho</li>
+      <li id="li-brown">Marrom</li>
     </ul>
   </body>
 </html>
