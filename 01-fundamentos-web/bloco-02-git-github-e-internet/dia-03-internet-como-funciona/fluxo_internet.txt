@@ -1,0 +1,9 @@
+- WEB DEVELOPERS UNITED
+
+1 - O servidor DNS recebe o endereço nominal e retorna o IP do servidor para o cliente
+2 - O cliente envia a requisição para o servidor Web contendo o endereço, o protocolo(HTTP), orecurso solicitado e o verbo(GET)
+4 - O servidor web recebe a requisição e  precessa o que foi solicitado pelo cliente
+5 - O servidor solicita os dados e arquivos necessários ao banco de dados
+6 - O servidor envia uma resposta ao cliente contendo os dados solicitados, o protocolo(HTTP), um código informando se tudo deu certo(200 ok), e o vebo(PUT)
+7 - O cliente recebe as informações enviadas pelo servidor e envia para a engine de renderização
+8 - A Engine rederiza a página e envia para o DOM, sendo exibido a página para o cliente
