@@ -1,0 +1,37 @@
+/* Ítens de todas listas com cor de fundo amarela*/
+ol li {
+  background-color: yellow;
+}
+
+/* Itens pares com letras maiúsculas */
+ul li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+/* Itens ímpares com a fonte verde */
+ul li:nth-of-type(even) {
+  color: green;
+}
+
+/* Headers com a cor vermelha */
+h1,
+h3 {
+  color: red;
+}
+
+/* Header em itálico ganham borda e tamanho 40px */
+h1 em,
+h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+/* Itens da lista com 20px */
+li {
+  font-size: 20px;
+}
+
+/* Itens da lista em itélico ficam em negrito */
+li em {
+  font-weight: bold;
+}
