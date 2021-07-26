@@ -1,5 +1,9 @@
-h1 {
+.title {
   text-align: center;
+}
+
+ul {
+  list-style: none;
 }
 
 .first {
@@ -8,6 +12,8 @@ h1 {
   height: 50px;
   text-align: center;
   width: 200px;
+
+  margin: auto;
 }
 
 .second {
@@ -24,4 +30,8 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+}
+
+.inline-block-iten {
+  display: inline-block;
 }
