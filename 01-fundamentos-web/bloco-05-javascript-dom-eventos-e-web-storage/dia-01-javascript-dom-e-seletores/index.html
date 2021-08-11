@@ -56,18 +56,22 @@
  6 - Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-      //Questão 1
-      const paragrafo = document.getElementsByTagName('p')
-      paragrafo[0].innerText =
+      // Questão 1
+      let paragrafos = document.getElementsByTagName('p')
+      paragrafos[0].innerText =
         'Daqui a 2 anos estarei como desenvolvedor pleno em uma grande empresa'
 
-      //Questão 2
-      const mainContent = document.getElementsByClassName('main-content')
+      // Questão 2
+      let mainContent = document.getElementsByClassName('main-content')
       mainContent[0].style.backgroundColor = 'rgb(76, 164, 109)'
 
-      //Questão 3
-      const centerContent = document.getElementsByClassName('center-content')
+      // Questão 3
+      let centerContent = document.getElementsByClassName('center-content')
       centerContent[0].style.backgroundColor = 'rgb(255, 255, 255)'
+
+      // Questão 4
+      let h1 = document.getElementsByTagName('h1')
+      h1[0].innerText = 'Exercício 5.1 - JavaScript'
     </script>
   </body>
 </html>
