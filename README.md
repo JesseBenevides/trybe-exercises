@@ -37,18 +37,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 5-1: JavaScript - DOM e seletores
 - [x] 5-2: JavaScript - Trabalhando com elementos
-- [ ] 5-3: JavaScript - Eventos
-- [ ] 5-4: JavaScript - Web Storage
+- [x] 5-3: JavaScript - Eventos
+- [x] 5-4: JavaScript - Web Storage
 - [ ] 5-5: Projeto - Meme Generator
-- [ ] 5-6: Projeto - Arte com Pixels
-- [ ] 5-7: Projeto - Lista de tarefas
+- [x] 5-6: Projeto - Arte com Pixels
+- [x] 5-7: Projeto - Lista de tarefas
 - [ ] 5-7: Projeto - Adivinhe a Cor
 - [ ] 5-7: Projeto - Carta Misteriosa
 
 ##### Bloco 6: HTML & CSS avançado
 
-- [ ] 6-1: HTML & CSS - Forms
-- [ ] 6-2: Bibliotecas JavaScript e Frameworks CSS
+- [x] 6-1: HTML & CSS - Forms
+- [x] 6-2: Bibliotecas JavaScript e Frameworks CSS
 - [ ] 6-3: CSS Flexbox - Part 1
 - [ ] 6-4: CSS Flexbox - Part 2
 - [ ] 6-5: CSS Responsivo - Mobile First
