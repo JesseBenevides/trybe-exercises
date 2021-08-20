@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Login</title>
+  </head>
+  <body>
+    <header><h1>Login</h1></header>
+    <section id="login">
+      <div id="email-container">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+          autocomplete="off"
+          autofocus
+          required
+        />
+      </div>
+      <div id="senha-container">
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+      <div id="lembre-me-container">
+        <input type="checkbox" name="lembre-me" id="lembre-me" />
+        <label for="lembre-me">Lembre-me</label>
+      </div>
+      <div id="button-container">
+        <button type="submit" name="entrar" id="entrar">Entrar</button>
+      </div>
+    </section>
+  </body>
+</html>
