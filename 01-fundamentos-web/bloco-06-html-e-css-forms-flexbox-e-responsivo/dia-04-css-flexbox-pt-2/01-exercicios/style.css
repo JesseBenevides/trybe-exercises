@@ -52,6 +52,7 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-basis: 700px;
 }
 
 .movie-container h2 {
@@ -73,6 +74,7 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
+  flex-basis: 16%;
 }
 
 .aside-container {
@@ -80,6 +82,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 350px;
+  text-align: center;
+  flex-grow: 1;
+  align-self: center;
 }
 
 .aside-container h3,
