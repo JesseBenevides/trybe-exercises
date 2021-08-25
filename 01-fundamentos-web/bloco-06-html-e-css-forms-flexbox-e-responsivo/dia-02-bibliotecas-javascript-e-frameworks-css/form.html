@@ -14,13 +14,17 @@
     <title>For Currículo</title>
   </head>
   <body>
-    <header><h1>Formulário</h1></header>
+    <header>
+      <h1>Formulário Currículo</h1>
+      <p>Preencha os campos abaixo</p>
+    </header>
     <main>
       <form>
         <fieldset id="personal-info">
-          <div id="name-row">
-            <label for="name">Nome:</label>
+          <div id="name-row" class="mb-3">
+            <label for="name" class="form-label">Nome:</label>
             <input
+              class="form-control"
               type="text"
               name="name"
               id="name"
@@ -29,9 +33,10 @@
               maxlength="40"
             />
           </div>
-          <div id="email-row">
-            <label for="email">Email:</label>
+          <div id="email-row" class="mb-3">
+            <label for="email" class="form-label">Email:</label>
             <input
+              class="form-control"
               type="email"
               name="email"
               id="email"
@@ -40,9 +45,10 @@
               maxlength="50"
             />
           </div>
-          <div id="cpf-row">
-            <label for="cpf">CPF:</label>
+          <div id="cpf-row" class="mb-3">
+            <label for="cpf" class="form-label">CPF:</label>
             <input
+              class="form-control"
               type="text"
               name="cpf"
               id="cpf"
@@ -51,9 +57,10 @@
               maxlength="11"
             />
           </div>
-          <div id="address-row">
-            <label for="address">Endereço:</label>
+          <div id="address-row" class="mb-3">
+            <label for="address " class="form-label">Endereço:</label>
             <input
+              class="form-control"
               type="text"
               name="address"
               id="address"
@@ -62,9 +69,10 @@
               maxlength="200"
             />
           </div>
-          <div id="city-row">
-            <label for="city">Cidade:</label>
+          <div id="city-row" class="mb-3">
+            <label for="city" class="form-label">Cidade:</label>
             <input
+              class="form-control"
               type="text"
               name="city"
               id="city"
@@ -73,39 +81,51 @@
               maxlength="28"
             />
           </div>
-          <div id="state-row">
-            <label for="state">Estado:</label>
-            <select name="state" id="state" required></select>
+          <div id="state-row" class="mb-3">
+            <label for="state" class="form-label">Estado:</label>
+            <select
+              class="form-select"
+              name="state"
+              id="state"
+              required
+            ></select>
           </div>
-          <div id="houseType-row">
-            <p>Tipo de moradia:</p>
-            <div id="house-row">
+          <div id="houseType-row" class="mb-3">
+            <label for="house-type" class="form-label">Tipo de moradia:</label>
+            <div id="house-row" class="form-check">
               <input
+                class="form-check-input"
                 type="radio"
                 name="house-type"
                 id="house"
                 value="house"
                 required
               />
-              <label for="house">Casa</label>
+              <label for="house" class="form-check-label">Casa</label>
             </div>
-            <div id="apartment-row">
+            <div id="apartment-row" class="form-check">
               <input
+                class="form-check-input"
                 type="radio"
                 name="apartment"
                 id="apartment"
                 value="apartment"
                 required
               />
-              <label for="apartment">Apartamento</label>
+              <label for="apartment" class="form-check-label"
+                >Apartamento</label
+              >
             </div>
           </div>
         </fieldset>
 
         <fieldset id="professional-info">
-          <div id="resume-row">
-            <label for="cv-resume">Resumo do currículo:</label>
+          <div id="resume-row" class="mb-3">
+            <label for="cv-resume" class="form-label"
+              >Resumo do currículo:</label
+            >
             <textarea
+              class="form-control"
               name="resume"
               id="resume"
               cols="30"
@@ -114,13 +134,23 @@
               required
             ></textarea>
           </div>
-          <div id="role-row">
-            <label for="role">Cargo: </label>
-            <input type="text" name="role" id="role" maxlength="40" required />
-          </div>
-          <div id="role-description-row">
-            <label for="role-description">Descrição do Cargo: </label>
+          <div id="role-row" class="mb-3">
+            <label for="role" class="form-label">Cargo: </label>
             <input
+              class="form-control"
+              type="text"
+              name="role"
+              id="role"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div id="role-description-row" class="mb-3">
+            <label for="role-description" class="form-label"
+              >Descrição do Cargo:
+            </label>
+            <input
+              class="form-control"
               type="text"
               name="role-description"
               id="role-description"
@@ -128,14 +158,22 @@
               required
             />
           </div>
-          <div class="data-row">
-            <label for="date">Data de início: </label>
-            <input type="text" name="date" required />
+          <div class="data-row" class="mb-3">
+            <label for="date" class="form-label">Data de início: </label>
+            <input class="form-control" type="text" name="date" required />
           </div>
         </fieldset>
-        <div id="button-container">
-          <button type="submit" id="submit-button">Enviar</button>
-          <button type="reset">Limpar</button>
+        <div id="button-container" class="mb-3">
+          <button
+            type="submit"
+            id="submit-button"
+            class="btn btn-primary submit-button"
+          >
+            Enviar
+          </button>
+          <button type="reset" class="btn btn-danger clear-button">
+            Limpar
+          </button>
         </div>
       </form>
     </main>
