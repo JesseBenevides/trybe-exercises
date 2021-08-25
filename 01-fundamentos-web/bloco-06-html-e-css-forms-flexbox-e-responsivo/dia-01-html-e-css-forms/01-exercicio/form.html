@@ -7,5 +7,132 @@
     <link rel="stylesheet" href="style.css" />
     <title>Form Currículo</title>
   </head>
-  <body></body>
+  <body>
+    <header><h1>Formulário</h1></header>
+    <main>
+      <form>
+        <fieldset id="personal-info">
+          <div id="name-row">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome aqui"
+              required
+              maxlength="40"
+            />
+          </div>
+          <div id="email-row">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email aqui"
+              required
+              maxlength="50"
+            />
+          </div>
+          <div id="cpf-row">
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              placeholder="Digite seu cpf aqui"
+              required
+              maxlength="11"
+            />
+          </div>
+          <div id="address-row">
+            <label for="address">Endereço:</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Digite seu endereço aqui"
+              required
+              maxlength="200"
+            />
+          </div>
+          <div id="city-row">
+            <label for="city">Cidade:</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Digite sia cidade aqui"
+              required
+              maxlength="28"
+            />
+          </div>
+          <div id="state-row">
+            <label for="state">Estado:</label>
+            <select name="state" id="state" required></select>
+          </div>
+          <div id="houseType-row">
+            <p>Tipo de moradia:</p>
+            <div id="house-row">
+              <input
+                type="radio"
+                name="house-type"
+                id="house"
+                value="house"
+                required
+              />
+              <label for="house">Casa</label>
+            </div>
+            <div id="apartment-row">
+              <input
+                type="radio"
+                name="apartment"
+                id="apartment"
+                value="apartment"
+                required
+              />
+              <label for="apartment">Apartamento</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="professional-info">
+          <div id="resume-row">
+            <label for="cv-resume">Resumo do currículo:</label>
+            <textarea
+              name="resume"
+              id="resume"
+              cols="30"
+              rows="10"
+              maxlength="1000"
+              required
+            ></textarea>
+          </div>
+          <div id="role-row">
+            <label for="role">Cargo: </label>
+            <input type="text" name="role" id="role" maxlength="40" required />
+          </div>
+          <div id="role-description-row">
+            <label for="role-description">Descrição do Cargo: </label>
+            <input
+              type="text"
+              name="role-description"
+              id="role-description"
+              maxlength="500"
+              required
+            />
+          </div>
+          <div class="data-row">
+            <label for="date">Data de início: </label>
+            <input type="text" name="date" required />
+          </div>
+        </fieldset>
+        <div id="button-container">
+          <button type="submit" id="submit-button">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
