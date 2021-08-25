@@ -1,3 +1,4 @@
+// Cria Options com todos os Estados
 function createStateOptions() {
   const stateList = [
     'AC',
@@ -41,6 +42,28 @@ function createStateOptions() {
   }
 }
 
+function validateName() {
+  let name = document.querySelector('[name=name]')
+
+  if (name.value.length > 40 || name.value.length === 0) {
+    alert('Nome inválido')
+  }
+}
+
+function validateData() {
+  validateName()
+}
+
+// Lida com o comportamento do botão de submit
+function handleSubmit(event) {
+  event.preventDefault()
+
+  validateData()
+}
+
 window.onload = function () {
   createStateOptions()
+
+  const submitButton = document.getElementById('submit-button')
+  submitButton.addEventListener('click', handleSubmit)
 }
