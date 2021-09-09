@@ -51,23 +51,24 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-2: Bibliotecas JavaScript e Frameworks CSS
 - [x] 6-3: CSS Flexbox - Part 1
 - [x] 6-4: CSS Flexbox - Part 2
-- [ ] 6-5: CSS Responsivo - Mobile First
-- [ ] 6-6: Projeto - Página inicial do Facebook
+- [x] 6-5: CSS Responsivo - Mobile First
+- [x] 6-6: Projeto - Trybewarts
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: JavaScript ES6 - let, const, arrow functions e template literals
-- [ ] 7-2: JavaScript ES6 - Objects
-- [ ] 7-3: Testes unitários em JavaScript
-- [ ] 7-4: Projeto - JavaScript Testes Unitários
+- [x] 7-1: JavaScript ES6 - let, const, arrow functions e template literals
+- [x] 7-2: JavaScript ES6 - Objects
+- [x] 7-3: Testes unitários em JavaScript
+- [x] 7-4: Projeto - JavaScript Testes Unitários
 
 ##### Bloco 8: JavaScript ES6
 
-- [ ] 8-1: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [ ] 8-2: JavaScript ES6 - Higher Order Functions - map e filter
-- [ ] 8-3: JavaScript ES6 - Higher Order Functions - reduce
-- [ ] 8-4: JavaScript ES6 - spread operator, rest parameter, destructuring e mais
-- [ ] 8-5: Projeto - Zoo functions
+- [x] 8-1: JavaScript ES6 - Introdução a Higher Order Functions
+- [x] 8-2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] 8-3: JavaScript ES6 - Higher Order Functions - map e filter
+- [ ] 8-4: JavaScript ES6 - Higher Order Functions - reduce
+- [ ] 8-5: JavaScript ES6 - spread operator, rest parameter, destructuring e mais
+- [ ] 8-6: Projeto - Zoo functions
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
