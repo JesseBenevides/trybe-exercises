@@ -1,6 +1,7 @@
 // Considere o seguinte array:
 
 const assert = require('assert');
+const { Agent } = require('http');
 
 const books = [
   {
@@ -65,20 +66,16 @@ const books = [
   }
 ];
 
-// 2- Crie uma string com os nomes de todas as pessoas autoras.
+// 3- Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados
 
-const expectedResult =
-  'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
+const expectedResult = 43;
 
-function reduceNames() {
-  const arrayAuthorNames = books.reduce((acc, book) => {
-    acc.push(book.author.name);
-    return acc;
-  }, []);
+function averageAge() {
+  const arrayAges = books.map(book => book.releaseYear - book.author.birthYear);
+  const sumAges = arrayAges.reduce((acc, age) => acc + age);
+  const average = sumAges / arrayAges.length;
 
-  const stringAuthorNames = arrayAuthorNames.join(', ');
-
-  return `${stringAuthorNames}.`;
+  return average;
 }
 
-assert.strictEqual(reduceNames(), expectedResult);
+assert.strictEqual(averageAge(), expectedResult);
