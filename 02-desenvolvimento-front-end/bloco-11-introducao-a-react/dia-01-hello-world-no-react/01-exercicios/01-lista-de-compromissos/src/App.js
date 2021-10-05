@@ -1,15 +1,15 @@
-import { Component } from 'react';
-
 import './App.css';
 
-const Task = (value) => {
+const createTask = (value) => {
   return (
     <li>{value}</li>
   );
 }
 
+const taskList = ['Estudar o conteúdo de React', 'Fazer os exercícios', 'Participar das mentorias', 'Tirar as dúvidas', 'Praticar novamente'];
+
 function App() {
-  return Task('Praticar React');
+  return <ul>{taskList.map((task) => createTask(task))}</ul>
 }
 
 export default App;
