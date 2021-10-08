@@ -5,19 +5,21 @@ class Form extends React.Component {
   constructor() {
     super();
 
-    this.handleNameOnChange = this.handleNameOnChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
 
     this.state = {
       name: '',
       email: '',
-      tec: '',
-      textArea: ''
+      tecnology: 'react',
+      aboutMe: ''
     }
   }
 
 
-  handleNameOnChange({ target }) {
-    this.setState({ name: target.value });
+  handleChange({ target }) {
+    const {name, value } = target;
+
+    this.setState({ [name]: value });
   }
 
   render() {
@@ -26,20 +28,20 @@ class Form extends React.Component {
         <h2>Meu Formulário</h2>
         <form className="form">
           <label>Nome: </label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleNameOnChange}/>
+          <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
 
           <label>Email: </label>
-          <input type="email" name="email"/>
+          <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/>
 
-          <label>Tecnologia: </label>
-          <select>
-            <option selected value="react">React</option>
+          <label>Escolha sua Tecnologia: </label>
+          <select name="tecnology" value={this.state.tecnology} onChange={this.handleChange}>
+            <option value="react">React</option>
             <option value="vue">Vue</option>
             <option value="angular">Angular</option>
           </select>
 
           <label>Sobre você: </label>
-          <textarea></textarea>
+          <textarea name="aboutMe" value={this.state.aboutMe} onChange={this.handleChange}></textarea>
 
         </form>
       </div>
