@@ -11,3 +11,11 @@ test('Verifica se existe o input do tipo email', () => {
   expect(inputEmail).toHaveProperty('type', 'email')
 });
 
+test('Verifica se existem 2 botões', () => {
+  // Acessar os Elementos da tela
+  render(<App />);
+  const buttons = screen.getAllByRole('button');
+
+  // Realizar os testes
+  expect(buttons).toHaveLength(2);
+});
