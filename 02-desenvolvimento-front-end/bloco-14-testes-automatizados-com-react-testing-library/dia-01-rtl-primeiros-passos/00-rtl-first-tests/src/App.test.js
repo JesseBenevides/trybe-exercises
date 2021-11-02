@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 
 test('Verifica se existe o input do tipo email', () => {
@@ -29,4 +30,23 @@ test('Verifica se existe um botão de enviar', () => {
   expect(sendButton).toBeInTheDocument();
   expect(sendButton).toHaveProperty('type', 'button');
   expect(sendButton).toHaveValue('Enviar')
+});
+
+test('Verifica se ao clicar no botão enviar, renderiza o email digitado', () => {
+  // Acessar os Elementos da tela
+  render(<App />);
+
+  const USER_EMAIL = 'jesse@trybe.com'
+
+  const inputEmail = screen.getByLabelText(/email/i);
+  const sendButton = screen.getByTestId('id-send');
+  const textEmail = screen.getByTestId('id-email-user')
+
+  //Interagir com os elementos
+  userEvent.type(inputEmail, USER_EMAIL);
+  userEvent.click(sendButton);
+
+  // Realizar os testes
+  expect(inputEmail).toHaveValue('');
+  expect(textEmail).toHaveTextContent(`Valor: ${USER_EMAIL}`)
 });
