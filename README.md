@@ -95,23 +95,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 12-1: Components com estado
 - [x] 12-2: Eventos e formulários no React
-- [ ] 12-3: Projeto - Movie Cards Library Stateful
+- [x] 12-3: Projeto - Movie Cards Library Stateful
 
 ##### Bloco 13: React
 
-- [ ] 13-1: Melhorando o reuso de componentes: props.children e PropTypes
-- [ ] 13-2: Ciclo de vida de componentes em React
-- [ ] 13-3: React Router
-- [ ] 13-4: Projeto - Movie Cards Library CRUD
+- [x] 13-1: Melhorando o reuso de componentes: props.children e PropTypes
+- [x] 13-2: Ciclo de vida de componentes em React
+- [x] 13-3: React Router
+- [x] 13-4: Projeto - Movie Cards Library CRUD
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: Metodologias Ágeis
-- [ ] 14-2: Projeto - Frontend Online Store
+- [x] 14-1: Metodologias Ágeis
+- [x] 14-2: Projeto - Frontend Online Store
 
 ##### Bloco 15: Testes em React
 
-- [ ] 15-1: Testando React com a React Testing Library
+- [x] 15-1: Testando React com a React Testing Library
 - [ ] 15-2: Testando React com a React Testing Library - Parte 2
 - [ ] 15-3: Projeto - Testes em React
 
