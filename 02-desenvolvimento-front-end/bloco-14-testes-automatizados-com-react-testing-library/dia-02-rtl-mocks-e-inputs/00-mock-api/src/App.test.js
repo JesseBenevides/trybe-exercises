@@ -12,10 +12,21 @@ it('fetches a joke', async () => {
     status: 200,
   };
 
+  // Primeira forma:
   jest.spyOn(global, 'fetch');
   global.fetch.mockResolvedValue({
     json: jest.fn().mockResolvedValue(joke),
   });
+
+  // Segunda forma:
+  // global.fetch = jest.fn(() => Promise.resolve({
+  //   json: () => Promise.resolve(joke),
+  // }));
+
+  // Terceira forma
+  // global.fetch = jest.fn(async () => ({
+  //   json: async () => joke
+  // }));
 
   render(<App />);
   const renderedJoke = await screen.findByText('Whiteboards ... are remarkable.');
