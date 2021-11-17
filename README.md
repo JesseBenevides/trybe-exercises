@@ -91,44 +91,45 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 11-2: Componentes React
 - [x] 11-3: Projeto - Movie Cards Library
 
-##### Bloco 12: React
+##### Bloco 12: React - Componentes com Estado, Eventos e Formulários
 
-- [x] 12-1: Components com estado
-- [x] 12-2: Eventos e formulários no React
-- [x] 12-3: Projeto - Movie Cards Library Stateful
+- [x] 12-1: Components com Estado e Eventos
+- [x] 12-2: Formulários no React
+- [x] 12-3: Projeto - Tryunfo
 
-##### Bloco 13: React
+##### Bloco 13: React - Ciclo de Vida do COmponente e React Router
 
 - [x] 13-1: Melhorando o reuso de componentes: props.children e PropTypes
 - [x] 13-2: Ciclo de vida de componentes em React
 - [x] 13-3: React Router
-- [x] 13-4: Projeto - Movie Cards Library CRUD
+- [x] 13-4: Projeto - TrybeTunes
 
 ##### Bloco 14: Metodologias Ágeis
 
 - [x] 14-1: Metodologias Ágeis
 - [x] 14-2: Projeto - Frontend Online Store
 
-##### Bloco 15: Testes em React
+##### Bloco 15: Testes automatizados com React Testing Library
 
-- [x] 15-1: Testando React com a React Testing Library
-- [ ] 15-2: Testando React com a React Testing Library - Parte 2
-- [ ] 15-3: Projeto - Testes em React
+- [x] 15-1: RTL - Primeiros passos
+- [x] 15-2: RTL - Mocks e inputs
+- [x] 15-3: RTL - Testando React Router
+- [x] 15-4: Projeto - Testes em React
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: Introdução ao Redux
-- [ ] 16-2: React com Redux - Parte 1
-- [ ] 16-3: React com Redux - Prática
-- [ ] 16-4: React com Redux - Parte 2
-- [ ] 16-5: Testes síncronos com React-Redux
-- [ ] 16-6: Projeto - Tabela com filtros de dados
+- [x] 16-1: Introdução ao Redux - O estado global da aplicação
+- [x] 16-2: Usando o Redux no React
+- [x] 16-3: Usando o Redux no React - Prática
+- [ ] 16-4: Usando o Redux no React - Actions Assíncronas
+- [ ] 16-5: Testes em React-Redux
+- [ ] 16-6: Projeto - Trybe Wallet
 
 ##### Bloco 17: Projeto React
 
 - [ ] 17-1: Projeto - Jogo de Trivia
 
-##### Bloco 18: React & Context API
+##### Bloco 18: React Hooks & Context API
 
 - [ ] 18-1: Context API do React
 - [ ] 18-2: React Hooks - useState e useContext
