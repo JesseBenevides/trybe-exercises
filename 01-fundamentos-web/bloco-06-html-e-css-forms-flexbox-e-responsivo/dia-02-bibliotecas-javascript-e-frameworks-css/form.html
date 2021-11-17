@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>For Currículo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário Currículo</h1>
+      <p>Preencha os campos abaixo</p>
+    </header>
+    <main>
+      <form>
+        <fieldset id="personal-info">
+          <div id="name-row" class="mb-3">
+            <label for="name" class="form-label">Nome:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome aqui"
+              required
+              maxlength="40"
+            />
+          </div>
+          <div id="email-row" class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email aqui"
+              required
+              maxlength="50"
+            />
+          </div>
+          <div id="cpf-row" class="mb-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="cpf"
+              id="cpf"
+              placeholder="Digite seu cpf aqui"
+              required
+              maxlength="11"
+            />
+          </div>
+          <div id="address-row" class="mb-3">
+            <label for="address " class="form-label">Endereço:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Digite seu endereço aqui"
+              required
+              maxlength="200"
+            />
+          </div>
+          <div id="city-row" class="mb-3">
+            <label for="city" class="form-label">Cidade:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Digite sia cidade aqui"
+              required
+              maxlength="28"
+            />
+          </div>
+          <div id="state-row" class="mb-3">
+            <label for="state" class="form-label">Estado:</label>
+            <select
+              class="form-select"
+              name="state"
+              id="state"
+              required
+            ></select>
+          </div>
+          <div id="houseType-row" class="mb-3">
+            <label for="house-type" class="form-label">Tipo de moradia:</label>
+            <div id="house-row" class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="house-type"
+                id="house"
+                value="house"
+                required
+              />
+              <label for="house" class="form-check-label">Casa</label>
+            </div>
+            <div id="apartment-row" class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="apartment"
+                id="apartment"
+                value="apartment"
+                required
+              />
+              <label for="apartment" class="form-check-label"
+                >Apartamento</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="professional-info">
+          <div id="resume-row" class="mb-3">
+            <label for="cv-resume" class="form-label"
+              >Resumo do currículo:</label
+            >
+            <textarea
+              class="form-control"
+              name="resume"
+              id="resume"
+              cols="30"
+              rows="10"
+              maxlength="1000"
+              required
+            ></textarea>
+          </div>
+          <div id="role-row" class="mb-3">
+            <label for="role" class="form-label">Cargo: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="role"
+              id="role"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div id="role-description-row" class="mb-3">
+            <label for="role-description" class="form-label"
+              >Descrição do Cargo:
+            </label>
+            <input
+              class="form-control"
+              type="text"
+              name="role-description"
+              id="role-description"
+              maxlength="500"
+              required
+            />
+          </div>
+          <div class="data-row" class="mb-3">
+            <label for="date" class="form-label">Data de início: </label>
+            <input class="form-control" type="text" name="date" required />
+          </div>
+        </fieldset>
+        <div id="button-container" class="mb-3">
+          <button
+            type="submit"
+            id="submit-button"
+            class="btn btn-primary submit-button"
+          >
+            Enviar
+          </button>
+          <button type="reset" class="btn btn-danger clear-button">
+            Limpar
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
