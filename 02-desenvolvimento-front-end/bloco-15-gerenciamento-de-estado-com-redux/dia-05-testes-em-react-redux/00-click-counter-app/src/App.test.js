@@ -1,7 +1,7 @@
 import React from 'react'
 import { cleanup } from '@testing-library/react';
 import App from './App';
-import renderWithRedux from './utils/renderWithRedux';
+import renderWithRedux from './helpers/renderWithRedux';
 import userEvent from '@testing-library/user-event';
 
 describe('testing clicks', () => {
