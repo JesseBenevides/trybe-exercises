@@ -83,7 +83,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-3: Jest - Simulando comportamentos
 - [x] 10-4: Projeto - Jest Assíncrono e Mocking
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 10(2): Introdução - React
 
@@ -134,18 +134,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 17-1: Context API do React
 - [x] 17-2: React Hooks - useState e useContext
 - [x] 17-3: React Hooks - useEffect e Hooks customizados
-- [ ] 17-4: Projeto - StarWars Datatable com Context API e Hooks
+- [x] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [ ] 18-1: Projeto - App de Receitas
+- [x] 18-1: Projeto - App de Receitas
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 19: Docker - Utilizando Containers
-- [ ] 19-1: Utilizando Containers - Docker
-- [ ] 19-2: Manipulação e Criação de Imagens no Docker
-- [ ] 19-3: Orquestrando Containers com Docker Compose
+- [x] 19-1: Utilizando Containers - Docker
+- [x] 19-2: Manipulação e Criação de Imagens no Docker
+- [x] 19-3: Orquestrando Containers com Docker Compose
 - [ ] 19-4: Projeto - Docker Todo-List
 
 ##### Bloco 20: Introdução à SQL
