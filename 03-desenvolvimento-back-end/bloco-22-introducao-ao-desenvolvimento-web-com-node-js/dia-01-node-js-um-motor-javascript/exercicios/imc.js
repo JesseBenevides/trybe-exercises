@@ -1,9 +1,16 @@
 const readline = require('readline-sync');
 
-const weight = readline.questionFloat('Qual seu peso? ');
-const height = readline.questionFloat('Qual sua altura? ');
+function getWeight() {
+  const weight = readline.questionFloat('Qual seu peso? ');
+  return weight;
+}
 
-function getIMC(height, weight) {
+function getHeight() {
+  const height = readline.questionFloat('Qual sua altura? ');
+  return height;
+}
+
+function calculateIMC(height, weight) {
   return weight / (height * height);
 }
 
@@ -20,8 +27,11 @@ function getCategory(imc) {
 }
 
 function main() {
-  const imc = getIMC(height, weight).toFixed(2);
+  const weight = getWeight();
+  const height = getHeight();
+  const imc = calculateIMC(height, weight).toFixed(2);
   const category = getCategory(imc);
+  
   console.log(`Seu IMC é ${imc}`);
   console.log(`Sua  situação é ${category}`);
 }
