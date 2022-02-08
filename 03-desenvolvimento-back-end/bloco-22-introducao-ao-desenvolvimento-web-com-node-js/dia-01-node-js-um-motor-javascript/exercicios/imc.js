@@ -1,5 +1,7 @@
-const height = 1.7;
-const weight = 70;
+const readline = require('readline-sync');
+
+const weight = readline.question('Qual seu peso? ');
+const height = readline.question('Qual sua altura? ');
 
 function getIMC(height, weight) {
   return weight / (height * height);
