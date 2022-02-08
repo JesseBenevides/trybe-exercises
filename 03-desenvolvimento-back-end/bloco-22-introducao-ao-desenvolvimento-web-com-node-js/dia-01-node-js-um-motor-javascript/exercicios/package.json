@@ -8,8 +8,5 @@
     "imc": "node imc"
   },
   "author": "jesse-benevides",
-  "license": "ISC",
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  }
+  "license": "ISC"
 }
