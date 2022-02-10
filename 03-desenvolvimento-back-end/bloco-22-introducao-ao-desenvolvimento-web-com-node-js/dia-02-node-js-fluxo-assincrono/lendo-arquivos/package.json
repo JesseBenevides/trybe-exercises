@@ -1,0 +1,12 @@
+{
+  "name": "lendo-arquivos",
+  "version": "1.0.0",
+  "description": "Testando a leitura de arquivos no Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "jesse-benevides",
+  "license": "ISC"
+}
