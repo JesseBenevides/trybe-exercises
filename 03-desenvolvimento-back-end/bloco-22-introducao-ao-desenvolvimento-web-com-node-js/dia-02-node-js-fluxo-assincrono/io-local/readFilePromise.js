@@ -8,5 +8,5 @@ fs.readFile(nomeDoArquivo, 'utf8')
   })
   .catch((err) => {
     console.error(`Não foi possível ler o arquivo ${nomeDoArquivo}\n Erro: ${err}`);
-    process.exit(1); // Encerra a execução do script e informa ao sistema operacional que houve um erro com código
+    process.exit(1);
   });
