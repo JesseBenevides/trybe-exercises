@@ -17,6 +17,7 @@ const drinks = [
   { id: 6, name: 'Água Mineral 500 ml', price: 5.0 },
 ];
 
+// Rotas de Recipes
 app.get('/recipes/search', function (req, res) {
   const { name, maxPrice, minPrice } = req.query;
   const filteredRecipes = recipes.filter((r) => (
@@ -40,8 +41,13 @@ app.get('/recipes', function (req, res) {
   res.json(recipes);
 });
 
-app.get('/drinks', function (req, res) {
-  res.json(drinks);
+// Rotas de Drinks
+app.get('/drinks/search', function (req, res) {
+  const { name } = req.query;
+  const filteredDrinks = drinks.filter((d) => (
+    d.name.includes(name)
+  ));
+  res.status(200).json(filteredDrinks);
 });
 
 app.get('/drinks/:id', function (req, res) {
@@ -53,6 +59,11 @@ app.get('/drinks/:id', function (req, res) {
   res.status(200).json(drink);
 });
 
+app.get('/drinks', function (req, res) {
+  res.json(drinks);
+});
+
+// HTTP Listener
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
 });
