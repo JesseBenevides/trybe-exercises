@@ -21,6 +21,7 @@ const drinks = [
 ];
 
 // ROTAS GET RECIPES
+
 app.get('/recipes/search', function (req, res) {
   const { name, maxPrice, minPrice } = req.query;
   const filteredRecipes = recipes.filter((r) => (
@@ -42,7 +43,7 @@ app.get('/recipes/:id', function (req, res) {
 
 app.get('/recipes', function (req, res) {
   const sortedRecipes = sortRecipesByName(recipes);
-  res.status(200).json(recipes);
+  res.status(200).json(sortedRecipes);
 });
 
 //ROTAS POST RECIPES
@@ -73,6 +74,14 @@ app.get('/drinks/:id', function (req, res) {
 app.get('/drinks', function (req, res) {
   const sortedDrinks = sortRecipesByName(drinks);
   res.status(200).json(sortedDrinks);
+});
+
+//VALIDANDO TOKEN NO HEADER
+app.get('/validateToken', function (req, res) {
+  const token = req.headers.authorization;
+  if (token.length !== 16) return res.status(401).json({message: 'Invalid Token!'});
+
+  res.status(200).json({message: 'Valid Token!'})
 });
 
 // HTTP Listener
