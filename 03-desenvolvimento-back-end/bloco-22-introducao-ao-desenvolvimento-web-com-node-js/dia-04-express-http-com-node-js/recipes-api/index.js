@@ -75,6 +75,12 @@ app.get('/drinks', function (req, res) {
   const sortedDrinks = sortRecipesByName(drinks);
   res.status(200).json(sortedDrinks);
 });
+//ROTAS POST DRINKS
+app.post('/drinks', function (req, res) {
+  const { id, name, price } = req.body;
+  drinks.push({id, name, price});
+  res.status(201).json({message: 'Drink created successfully!'})
+});
 
 //VALIDANDO TOKEN NO HEADER
 app.get('/validateToken', function (req, res) {
