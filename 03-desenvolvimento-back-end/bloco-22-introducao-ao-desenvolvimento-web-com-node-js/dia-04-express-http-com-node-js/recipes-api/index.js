@@ -1,6 +1,8 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
+app.use(bodyParser.json());
 
 const recipes = [
   { id: 1, name: 'Lasanha', price: 40.0, waitTime: 30 },
@@ -17,7 +19,7 @@ const drinks = [
   { id: 6, name: 'Água Mineral 500 ml', price: 5.0 },
 ];
 
-// Rotas de Recipes
+// ROTAS GET RECIPES
 app.get('/recipes/search', function (req, res) {
   const { name, maxPrice, minPrice } = req.query;
   const filteredRecipes = recipes.filter((r) => (
@@ -41,7 +43,14 @@ app.get('/recipes', function (req, res) {
   res.json(recipes);
 });
 
-// Rotas de Drinks
+//ROTAS POST RECIPES
+app.post('/recipes', function (req, res) {
+  const { id, name, price } = req.body;
+  recipes.push({ id, name, price});
+  res.status(201).json({ message: 'Recipe created successfully!'});
+});
+
+// ROTAS GET DRINKS
 app.get('/drinks/search', function (req, res) {
   const { name } = req.query;
   const filteredDrinks = drinks.filter((d) => (
