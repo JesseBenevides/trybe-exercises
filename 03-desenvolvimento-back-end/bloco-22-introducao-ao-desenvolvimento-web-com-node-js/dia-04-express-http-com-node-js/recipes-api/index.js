@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { sortRecipesByName } = require('./sortRecipes');
 
 const app = express();
 app.use(bodyParser.json());
@@ -40,6 +41,7 @@ app.get('/recipes/:id', function (req, res) {
 });
 
 app.get('/recipes', function (req, res) {
+  const sortedRecipes = sortRecipesByName(recipes);
   res.status(200).json(recipes);
 });
 
@@ -69,7 +71,8 @@ app.get('/drinks/:id', function (req, res) {
 });
 
 app.get('/drinks', function (req, res) {
-  res.status(200).json(drinks);
+  const sortedDrinks = sortRecipesByName(drinks);
+  res.status(200).json(sortedDrinks);
 });
 
 // HTTP Listener
