@@ -40,7 +40,7 @@ app.get('/recipes/:id', function (req, res) {
 });
 
 app.get('/recipes', function (req, res) {
-  res.json(recipes);
+  res.status(200).json(recipes);
 });
 
 //ROTAS POST RECIPES
@@ -69,7 +69,7 @@ app.get('/drinks/:id', function (req, res) {
 });
 
 app.get('/drinks', function (req, res) {
-  res.json(drinks);
+  res.status(200).json(drinks);
 });
 
 // HTTP Listener
