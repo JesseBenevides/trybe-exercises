@@ -11,7 +11,7 @@ app.get('/authors/:id', Author.findById);
 
 app.post('/authors', Author.create);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Ouvindo a porta ${PORT}`);
