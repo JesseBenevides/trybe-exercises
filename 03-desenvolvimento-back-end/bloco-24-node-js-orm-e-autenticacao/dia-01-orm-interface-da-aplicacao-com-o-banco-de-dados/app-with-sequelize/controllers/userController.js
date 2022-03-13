@@ -1,9 +1,7 @@
-const express = require('express');
 const { User } = require('../models');
-const router = express.Router();
 
-// Este endpoint usa o método findAll do Sequelize para retorno todos os users.
-router.get('/', async (_req, res) => {
+// Este controller usa o método findAll do Sequelize para retorno todos os users.
+const findAll =  async (_req, res) => {
   try {
     const users = await User.findAll();
 
@@ -12,10 +10,10 @@ router.get('/', async (_req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   };
-});
+};
 
-// Este endpoint usa o método findByPk do Sequelize para buscar um usuário pelo id.
-router.get('/:id', async (req, res) => {
+// Este controller usa o método findByPk do Sequelize para buscar um usuário pelo id.
+const findById =  async (req, res) => {
   try {
     const { id } = req.params;
     const user = await User.findByPk(id);
@@ -27,11 +25,10 @@ router.get('/:id', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-// Este endpoint usa o método findOne do Sequelize para buscar um usuário pelo id e email.
-// URL a ser utilizada para o exemplo http://localhost:3000/user/search/1?email=aqui-o-email
-router.get('/search/:id', async (req, res) => {
+// Este controller usa o método findOne do Sequelize para buscar um usuário pelo id e email.
+const searchByEmail = async (req, res) => {
   try {
     const { id } = req.params;
     const { email } = req.query;
@@ -44,10 +41,10 @@ router.get('/search/:id', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-// Este endpoint usa o método create do Sequelize para salvar um usuário no banco.
-router.post('/', async (req, res) => {
+// Este controller usa o método create do Sequelize para salvar um usuário no banco.
+const create =  async (req, res) => {
   try {
     const { fullName, email } = req.body;
     const newUser = await User.create({ fullName, email });
@@ -57,10 +54,10 @@ router.post('/', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-// Este endpoint usa o método update do Sequelize para alterar um usuário no banco.
-router.put('/:id', async (req, res) => {
+// Este controller usa o método update do Sequelize para alterar um usuário no banco.
+const update =  async (req, res) => {
   try {
     const { fullName, email } = req.body;
     const { id } = req.params;
@@ -79,10 +76,10 @@ router.put('/:id', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-// Este endpoint usa o método destroy do Sequelize para remover um usuário no banco.
-router.delete('/:id', async (req, res) => {
+// Este controller usa o método destroy do Sequelize para remover um usuário no banco.
+const exclude =  async (req, res) => {
   try {
     const { id } = req.params;
     const deleteUser = await User.destroy(
@@ -96,6 +93,13 @@ router.delete('/:id', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-module.exports = router;
+module.exports = {
+  findAll,
+  findById,
+  searchByEmail,
+  create,
+  update,
+  exclude,
+};
