@@ -25,3 +25,16 @@ export function square(side: number): number {
 export function rectangle(base: number, height: number): number {
   return base * height;
 }
+
+export function rhombus(diagol1: number, diagol2: number): number {
+  return (diagol1 * diagol2) / 2;
+}
+
+export function trapezium(base1: number, base2: number, height: number): number {
+  return ((base1 + base2) * height) / 2;
+}
+
+export function circle(radius: number): number {
+  const PI = 3.14;
+  return (radius ** 2) * PI;
+}
