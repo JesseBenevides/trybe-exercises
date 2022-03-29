@@ -160,46 +160,46 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 21-1: Funções mais usadas no SQL
 - [x] 21-2: Descomplicando JOINs e UNIONs
-- [ ] 21-3: Transformando ideias em um modelo de banco de dados
-- [ ] 21-4: Projeto - One For All
+- [x] 21-3: Transformando ideias em um modelo de banco de dados
+- [x] 21-4: Projeto - One For All
 
 ##### Bloco 22: Introdução ao Desenvolvimento Web com Node.js
 
-- [ ] 22-1: Introdução - Node.js
-- [ ] 22-2: Node.js - Um motor JavaScript
-- [ ] 22-2: Node.js - Fluxo Assíncrono
-- [ ] 22-3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
-- [ ] 22-4: Express - HTTP com Node.js
-- [ ] 22-5: Express - Middlewares
-- [ ] 22-6: Projeto - Talker Manager 
+- [x] 22-1: Introdução - Node.js
+- [x] 22-2: Node.js - Um motor JavaScript
+- [x] 22-2: Node.js - Fluxo Assíncrono
+- [x] 22-3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [x] 22-4: Express - HTTP com Node.js
+- [x] 22-5: Express - Middlewares
+- [x] 22-6: Projeto - Talker Manager 
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: Arquitetura de Software - Camada de Model
-- [ ] 23-2: Arquitetura de Software - Camada de Controller e Service
-- [ ] 23-3: Arquitetura Web - Rest e Restful
-- [ ] 23-4: Arquitetura de Software - Testando as Camadas
-- [ ] 23-5: Projeto - Store Manager
+- [x] 23-1: Arquitetura de Software - Camada de Model
+- [x] 23-2: Arquitetura de Software - Camada de Controller e Service
+- [x] 23-3: Arquitetura Web - Rest e Restful
+- [x] 23-4: Arquitetura de Software - Testando as Camadas
+- [x] 23-5: Projeto - Store Manager
 
 ##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24-1: ORM - Interface da aplicação com o Banco de Dados
-- [ ] 24-2: ORM - Associations
-- [ ] 24-3: JWT - (JSON Web Token)
-- [ ] 24-4: Testando APIs com Testes de Integração
-- [ ] 24-5: Projeto - API de Blogs
+- [x] 24-1: ORM - Interface da aplicação com o Banco de Dados
+- [x] 24-2: ORM - Associations
+- [x] 24-3: JWT - (JSON Web Token)
+- [x] 24-4: Testando APIs com Testes de Integração
+- [x] 24-5: Projeto - API de Blogs
 
 ##### Bloco 25: Deployment
 
-- [ ] 25-1: Infraestrutura - Deploy com Heroku
-- [ ] 25-2: Deploy Docker & Heroku
-- [ ] 25-3: Projeto - Stranger Things
+- [x] 25-1: Infraestrutura - Deploy com Heroku
+- [x] 25-2: Deploy Docker & Heroku
+- [x] 25-3: Projeto - Stranger Things
 
 ##### Bloco 26: TypeScript
 
-- [ ] 26-1: Introdução ao TypeScript
-- [ ] 26-2: Tipagem Estática e Generics
-- [ ] 26-3: Express com TypeScript
+- [x] 26-1: Introdução ao TypeScript
+- [x] 26-2: Tipagem Estática e Generics
+- [x] 26-3: Express com TypeScript
 - [ ] 26-4: Projeto - Trybe Smith
 
 ##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
