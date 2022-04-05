@@ -17,4 +17,11 @@ class Student {
     
     return examGradesSum + workGradesSum;
   }
+
+  getGradesAverage(): number {
+    const gradesQuantity = (this.examGrades.length + this.workGrades.length);
+    const gradesSum = this.getGradesSum();
+
+    return gradesSum / gradesQuantity;
+  }
 }
