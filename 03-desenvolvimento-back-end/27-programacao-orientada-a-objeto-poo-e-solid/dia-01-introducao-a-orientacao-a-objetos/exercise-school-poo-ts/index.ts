@@ -10,4 +10,11 @@ class Student {
     this.examGrades = examGrades;
     this.workGrades = workGrades;
   }
+
+  getGradesSum(): number {
+    const examGradesSum = this.examGrades.reduce((acc, cur) => acc + cur);
+    const workGradesSum = this.examGrades.reduce((acc, cur) => acc + cur);
+    
+    return examGradesSum + workGradesSum;
+  }
 }
